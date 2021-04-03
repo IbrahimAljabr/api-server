@@ -13,11 +13,11 @@ const foodRoute = require('./routes/food');
 const app = express();
 
 
-// app.use(express.json());
-// app.use(morgan('dev'))
+app.use(express.json());
+app.use(morgan('dev'))
 
-// app.use('/api/v1/food/', foodRoute);
-// app.use('/api/v2/clothes/', clothesRoute);
+app.use('/api/v1/food/', foodRoute);
+app.use('/api/v2/clothes/', clothesRoute);
 
 
 
