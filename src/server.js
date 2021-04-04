@@ -4,6 +4,7 @@
 const express = require('express');
 const morgan = require('morgan');
 
+require('dotenv').config();
 const notFoundHandler = require('./error-handlers/404.js');
 const errorHandler = require('./error-handlers/500.js');
 const clothesRoute = require('./routes/clothes');
